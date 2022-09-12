@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 4783",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "lint": "eslint . --ext .js,.jsx",
+    "prettier": "prettier --write \"./src/**/*.{js,jsx}\"",
+    "prettier:check": "prettier --check \"./src/**/*.{js,jsx}\"",
+    "codegen": "graphql-codegen",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
