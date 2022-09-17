@@ -31,6 +31,8 @@ export const WRONG_NETWORK = IS_MAINNET
   : 'Please change network to Polygon Mumbai testnet.'
 export const SIGN_ERROR = 'Failed to sign data'
 
+export const NFT_PORT_AUTH_KEY = process.env.NFT_PORT_AUTH_KEY
+
 // URLs
 export const STATIC_ASSETS = 'https://assets.lenster.xyz/images' // TODO: Need to change
 export const API_URL = IS_MAINNET
@@ -42,8 +44,8 @@ export const POLYGONSCAN_URL = IS_MAINNET
 export const RARIBLE_URL = IS_MAINNET
   ? 'https://rarible.com'
   : 'https://rinkeby.rarible.com'
-export const IMAGEKIT_URL_PROD = 'https://ik.imagekit.io/lensterimg'
-export const IMAGEKIT_URL_DEV = 'https://ik.imagekit.io/lensterdev'
+export const IMAGEKIT_URL_PROD = 'https://ik.imagekit.io/nlw6v2zed'
+export const IMAGEKIT_URL_DEV = 'https://ik.imagekit.io/nlw6v2zed'
 export const IMAGEKIT_URL = IS_PRODUCTION ? IMAGEKIT_URL_PROD : IMAGEKIT_URL_DEV
 
 // Web3

@@ -49,7 +49,7 @@ const Unfollow = ({
   setFollowersCount
 }) => {
   const { isAuthenticated } = useAppPersistStore()
-  const [writeLoading, setWriteLoading] = useState < boolean > false
+  const [writeLoading, setWriteLoading] = useState(false)
   const { isLoading: signLoading, signTypedDataAsync } = useSignTypedData({
     onError(error) {
       toast.error(error?.message)

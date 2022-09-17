@@ -1,9 +1,7 @@
 import { IMAGEKIT_URL } from 'src/constants'
 
 const imagekitURL = (url, name) => {
-  return name
-    ? `${IMAGEKIT_URL}/tr:n-${name},tr:di-placeholder.webp/${url}`
-    : `${IMAGEKIT_URL}/tr:di-placeholder.webp/${url}`
+  return url
 }
 
 export default imagekitURL
